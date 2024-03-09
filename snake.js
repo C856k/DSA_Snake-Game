@@ -45,12 +45,6 @@ class SnakeGame {
                 break;
         }
 
-        // Check if collided with self
-        if (this.collidedWithSelf(newHead)) {
-            clearInterval(this.intervalId);
-            alert('Game Over!');
-            return;
-        }
 
         // Check if collided with wall
         if (newHead.x < 0 || newHead.x >= WIDTH || newHead.y < 0 || newHead.y >= HEIGHT) {
