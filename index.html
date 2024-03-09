@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(30, 20px);
+            grid-template-rows: repeat(20, 20px);
+            gap: 1px;
+            border: 1px solid black;
+        }
+
+        .cell {
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+        }
+
+        .snake {
+            background-color: green;
+        }
+
+        .food {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="game-board"></div>
+<script src="snake.js"></script>
+</body>
+</html>
